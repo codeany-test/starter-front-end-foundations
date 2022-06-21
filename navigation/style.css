@@ -1,3 +1,39 @@
 body {
   margin: 0;
 }
+header{
+    background-color: #0B1C51;
+}
+header h1{
+    font-size: 52px;
+    color: #fff;
+    text-align: center;
+}
+header nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction : column;
+    }
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+@media all and (min-width: 800px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    header h1{
+        font-size: 48px;
+    }
+    header nav ul{
+        flex-direction : row;
+    }
+      header nav ul li a:hover {
+        color: #bdbdbd;
+      }
+
+}
